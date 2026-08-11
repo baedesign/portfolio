@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<!--
+===============================================================
+SOLE CONTABILIDADE — VERSÃO HTML EDITÁVEL / ARQUIVOS SEPARADOS
+===============================================================
+index.html  → estrutura e textos
+style.css   → aparência, cores, tipografia e responsividade
+script.js   → menu, animações, formulário e interações
+assets/     → imagens e logotipos
+
+A TT Commons Pro é carregada pelo Adobe Fonts no <head>.
+===============================================================
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sole Contabilidade | Contabilidade Digital e Consultiva</title>
+<meta name="description" content="Contabilidade personalizada, digital e consultiva para você crescer com segurança, clareza e tranquilidade fiscal. Fale com a Sole Contabilidade." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sole Contabilidade | Contabilidade Digital e Consultiva" />
+<meta property="og:description" content="Cuide do seu negócio. A contabilidade, deixe com a Sole. Atendimento consultivo, transparente e 100% digital." />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#382417" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="preload" as="image" href="assets/images/hero.jpg" />
+<link rel="stylesheet" href="https://use.typekit.net/vjv5njz.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a class="skip-link" href="#hero">Ir para o conteúdo</a>
+
+<!-- ============ 01 HEADER ============ -->
+<!-- ===== HEADER: EDITE MENU E CTA AQUI ===== -->
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a class="brand-text" href="#hero" aria-label="Sole Contabilidade — página inicial">
+      <span class="brand-sole">Sole</span>
+      <span class="brand-contabilidade">Contabilidade</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-vanilla btn-sm" href="#contato">Fale Conosco</a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav aria-label="Navegação mobile">
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-vanilla" href="#contato">Fale Conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ 02 HERO ============ -->
+  <!-- ===== HERO: EDITE TÍTULO, TEXTO E BOTÕES AQUI ===== -->
+  <section class="hero" id="hero">
+    <img class="hero-bg" src="assets/images/hero.jpg" alt="Mesa de trabalho com relatórios de gestão empresarial em um notebook" width="1920" height="1280" fetchpriority="high" />
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="hero-eyebrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+        CONTABILIDADE DIGITAL &amp; CONSULTIVA
+      </p>
+      <h1 class="hero-title">Cuide do seu<br />negócio. A<br />contabilidade,<br />deixe com a Sole.</h1>
+      <p class="hero-text">Contabilidade personalizada, digital e consultiva para você crescer com segurança, clareza e tranquilidade fiscal.</p>
+      <div class="hero-actions">
+        <a class="btn btn-vanilla" href="#contato">Solicite uma Consultoria Gratuita <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#servicos">Conheça Nossos Serviços</a>
+      </div>
+      <ul class="hero-trust">
+        <li>Atendimento humanizado</li>
+        <li class="sep" aria-hidden="true"></li>
+        <li>Processos 100% digitais</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 03 QUEM SOMOS ============ -->
+  <!-- ===== QUEM SOMOS ===== -->
+  <section class="section sobre" id="sobre">
+    <div class="container grid-2">
+      <div class="reveal">
+        <p class="eyebrow">QUEM SOMOS</p>
+        <h2 class="section-title">Mais que contabilidade: parceria para o seu crescimento</h2>
+        <p class="body-text">A <strong>Sole Contabilidade</strong> nasceu com o propósito de transformar a relação entre empresas e seus contadores. Acreditamos que contabilidade vai além de obrigações fiscais — é uma ferramenta estratégica para o sucesso do seu negócio.</p>
+        <p class="body-text">Com tecnologia e um time dedicado, oferecemos um atendimento consultivo, transparente e personalizado.</p>
+      </div>
+      <ul class="feature-rows">
+        <li class="row-card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 20s-7-4.4-7-9a4 4 0 017-2.6A4 4 0 0119 11c0 4.6-7 9-7 9z"/></svg></span>
+          <h3>Atendimento humanizado e próximo</h3>
+        </li>
+        <li class="row-card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/></svg></span>
+          <h3>Processos 100% digitais</h3>
+        </li>
+        <li class="row-card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="9" cy="9" r="3"/><path d="M3 19c0-3 2.7-5 6-5s6 2 6 5"/><path d="M16 8a3 3 0 010 6"/><path d="M18 19c0-2-.7-3.5-2-4.5"/></svg></span>
+          <h3>Equipe especializada e acessível</h3>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ 04 SERVIÇOS ============ -->
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="section servicos" id="servicos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">NOSSOS SERVIÇOS</p>
+        <h2 class="section-title">Soluções completas para o seu negócio</h2>
+        <p class="body-text">Oferecemos tudo o que você precisa para manter sua empresa em dia e crescer com segurança.</p>
+      </div>
+      <div class="cards-3">
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 21V5a1 1 0 011-1h9a1 1 0 011 1v16"/><path d="M15 10h4a1 1 0 011 1v10"/><path d="M8 8h3M8 12h3M8 16h3M18 14h1M18 18h1"/><path d="M2 21h20"/></svg></span>
+          <h3>Contabilidade para Empresas</h3>
+          <p>Gestão contábil completa para empresas de todos os portes, com foco em resultados e conformidade fiscal.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="10" cy="8" r="3.2"/><path d="M3.5 20c0-3.3 2.9-6 6.5-6"/><path d="M15 17.5l2 2 4-4"/></svg></span>
+          <h3>Contabilidade para MEI</h3>
+          <p>Suporte especializado para microempreendedores, mantendo tudo em dia de forma simples e prática.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h2M12 11h2M16 11h0M8 15h2M12 15h2M16 15h0M8 18h6"/></svg></span>
+          <h3>Planejamento Tributário</h3>
+          <p>Análise estratégica para reduzir a carga tributária de forma legal e inteligente.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M14 3H7a1 1 0 00-1 1v16a1 1 0 001 1h10a1 1 0 001-1V7l-4-4z"/><path d="M9 14l2 2 4-4"/></svg></span>
+          <h3>Abertura e Regularização</h3>
+          <p>Abrimos e regularizamos sua empresa com agilidade, cuidando de toda a burocracia.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg></span>
+          <h3>Folha de Pagamento</h3>
+          <p>Gestão completa da folha e obrigações trabalhistas, sem dor de cabeça para você.</p>
+        </article>
+        <article class="card reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M7 15l4-5 3 3 5-6"/></svg></span>
+          <h3>Consultoria Financeira</h3>
+          <p>Orientação estratégica para tomada de decisão, com dados claros e relatórios inteligentes.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 DIFERENCIAIS ============ -->
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="section diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">POR QUE A SOLE?</p>
+        <h2 class="section-title">Diferenciais que fazem a diferença</h2>
+      </div>
+      <div class="cols-4">
+        <div class="pillar reveal">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M11 6l-3.5 3.5 4 4L15 10"/><path d="M2 12l4-5 5 5"/><path d="M22 12l-4 5-5-5"/></svg></span>
+          <h3>Atendimento Consultivo</h3>
+          <p>Não somos apenas contadores — somos parceiros do seu crescimento.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></span>
+          <h3>Tecnologia &amp; Agilidade</h3>
+          <p>Processos digitais que economizam seu tempo e aumentam a eficiência.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6-10-6-10-6z"/><circle cx="12" cy="12" r="2.5"/></svg></span>
+          <h3>Transparência Total</h3>
+          <p>Informações claras, relatórios acessíveis e sem surpresas.</p>
+        </div>
+        <div class="pillar reveal">
+          <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M4 14v-2a8 8 0 1116 0v2"/><rect x="2.5" y="14" width="4" height="6" rx="2"/><rect x="17.5" y="14" width="4" height="6" rx="2"/></svg></span>
+          <h3>Suporte Contínuo</h3>
+          <p>Estamos sempre disponíveis quando você mais precisa.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 BENEFÍCIOS ============ -->
+  <!-- ===== BENEFÍCIOS ===== -->
+  <section class="section beneficios" id="beneficios">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">BENEFÍCIOS</p>
+        <h2 class="section-title">O que você ganha com a Sole</h2>
+      </div>
+      <div class="cards-2 narrow">
+        <article class="card card-compact reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9.5 12l1.8 1.8 3.4-3.6"/></svg></span>
+          <div><h3>Menos Riscos Fiscais</h3><p>Fique em dia com todas as obrigações e evite multas e problemas com o fisco.</p></div>
+        </article>
+        <article class="card card-compact reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <div><h3>Economia de Tempo e Dinheiro</h3><p>Processos otimizados que liberam você para focar no que realmente importa.</p></div>
+        </article>
+        <article class="card card-compact reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M5 15c-1 4 0 5 0 5s3-.4 4.5-2"/><path d="M9 14l-3-3c1-6 6-9 12-9 0 6-3 11-9 12z"/><path d="M14.5 9.5h.01"/></svg></span>
+          <div><h3>Crescimento com Segurança</h3><p>Tenha ao seu lado uma equipe que apoia suas decisões estratégicas.</p></div>
+        </article>
+        <article class="card card-compact reveal">
+          <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4"/></svg></span>
+          <div><h3>Decisões Mais Inteligentes</h3><p>Dados claros e relatórios que transformam números em oportunidades.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 CTA PRINCIPAL ============ -->
+  <section class="cta-block">
+    <div class="container cta-inner reveal">
+      <h2>Pronto para ter a contabilidade que seu negócio merece?</h2>
+      <p>Agende uma conversa gratuita e descubra como a Sole pode simplificar sua gestão e impulsionar seu crescimento.</p>
+      <a class="btn btn-vanilla" href="#contato">Agendar Conversa com a Sole <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- ============ 09 CONTATO ============ -->
+  <!-- ===== CONTATO / FORMULÁRIO ===== -->
+  <section class="section contato" id="contato">
+    <div class="container grid-2 contato-grid">
+      <div class="reveal">
+        <p class="eyebrow">CONTATO</p>
+        <h2 class="section-title">Vamos conversar sobre o futuro do seu negócio?</h2>
+        <p class="body-text">Preencha o formulário ao lado e um dos nossos contadores entrará em contato com você em até 24 horas. Sem compromisso.</p>
+      </div>
+
+      <div class="form-card reveal">
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" placeholder="Seu nome completo" autocomplete="name" required aria-describedby="err-nome" />
+            <p class="error" id="err-nome" hidden></p>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" placeholder="seu@email.com" autocomplete="email" required aria-describedby="err-email" />
+            <p class="error" id="err-email" hidden></p>
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required aria-describedby="err-telefone" />
+            <p class="error" id="err-telefone" hidden></p>
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input id="empresa" name="empresa" type="text" placeholder="Nome da sua empresa (opcional)" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?" required aria-describedby="err-mensagem"></textarea>
+            <p class="error" id="err-mensagem" hidden></p>
+          </div>
+          <button class="btn btn-cafe btn-block" type="submit">Quero falar com a Sole <span class="arrow" aria-hidden="true">→</span></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ 10 FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <!-- LOGO OFICIAL versão clara: assets/logos/sole-bege-light.svg -->
+      <img src="assets/logos/sole-bege-light.svg" alt="Sole Contabilidade" width="210" height="50" loading="lazy" />
+      <p>Contabilidade digital e consultiva para empresas que querem crescer com clareza e segurança.</p>
+    </div>
+    <nav class="footer-col" aria-label="Navegação do rodapé">
+      <h3>Navegação</h3>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="footer-col">
+      <h3>Projeto</h3>
+      <p>Demonstração de interface para portfólio.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Sole Contabilidade. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

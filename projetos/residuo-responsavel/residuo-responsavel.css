@@ -1,0 +1,195 @@
+:root {
+  --rr-green: #00734f;
+  --rr-green-deep: #04553d;
+  --rr-green-soft: #72ad91;
+  --rr-red: #ed1b2f;
+  --rr-paper: #ecebea;
+}
+
+.rr-accent { color: var(--rr-red); }
+
+.rr-case-hero {
+  padding-top: clamp(150px, 15vw, 230px);
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+
+.rr-case-title {
+  max-width: 1280px;
+  margin-top: 22px;
+  font-size: clamp(56px, 7.2vw, 124px);
+  line-height: .89;
+  letter-spacing: -.055em;
+}
+
+.rr-case-meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: clamp(64px, 8vw, 110px);
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.rr-case-meta > div { min-width: 0; }
+
+.rr-case-meta p:not(.label) {
+  margin-top: 10px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.rr-visual {
+  margin: 0;
+  overflow: hidden;
+  background: var(--rr-paper);
+}
+
+.rr-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rr-visual-full { width: 100%; }
+
+.rr-visual-contained {
+  width: min(calc(100% - (var(--pad) * 2)), var(--max));
+  margin-inline: auto;
+}
+
+.rr-story {
+  padding-top: clamp(92px, 10vw, 150px);
+  padding-bottom: clamp(92px, 10vw, 150px);
+}
+
+.rr-story-compact {
+  padding-top: clamp(70px, 8vw, 118px);
+  padding-bottom: clamp(70px, 8vw, 118px);
+}
+
+.rr-divider-section { border-top: 1px solid var(--line); }
+
+.rr-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(300px, 4fr);
+  gap: clamp(48px, 8vw, 130px);
+  align-items: start;
+  margin-top: 22px;
+}
+
+.rr-story-title {
+  max-width: 940px;
+  font-size: clamp(46px, 5.8vw, 94px);
+  line-height: .94;
+  letter-spacing: -.045em;
+}
+
+.rr-story-copy {
+  max-width: 600px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.65;
+}
+
+.rr-story-copy p + p { margin-top: 24px; }
+.rr-story-copy strong { color: var(--text); }
+
+.rr-pillars {
+  background: #171717;
+  color: #fff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.rr-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  padding-top: clamp(58px, 6vw, 88px);
+  padding-bottom: clamp(58px, 6vw, 88px);
+}
+
+.rr-pillar {
+  padding: 18px clamp(24px, 3vw, 46px) 22px;
+  border-left: 1px solid var(--line);
+}
+
+.rr-pillar:first-child { border-left: 0; padding-left: 0; }
+.rr-pillar:last-child { padding-right: 0; }
+
+.rr-pillar-number {
+  display: block;
+  margin-bottom: 34px;
+  color: var(--rr-red);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.rr-pillar h3 {
+  margin: 0 0 14px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(26px, 2.25vw, 40px);
+  line-height: 1;
+  letter-spacing: -.03em;
+}
+
+.rr-pillar p {
+  max-width: 320px;
+  margin: 0;
+  color: rgba(255,255,255,.66);
+  line-height: 1.65;
+}
+
+.rr-pillar::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 3px;
+  margin-top: 30px;
+  background: var(--rr-green);
+}
+
+.rr-role-section {
+  position: relative;
+}
+
+.rr-role-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
+  width: clamp(52px, 5vw, 78px);
+  height: 3px;
+  background: var(--rr-green);
+}
+
+@media (max-width: 1000px) {
+  .rr-pillars-grid { grid-template-columns: 1fr 1fr; }
+  .rr-pillar:nth-child(3) { border-left: 0; }
+  .rr-pillar:nth-child(n+3) { border-top: 1px solid var(--line); padding-top: 36px; }
+}
+
+@media (max-width: 900px) {
+  .rr-case-hero { padding-top: 132px; }
+  .rr-case-meta { grid-template-columns: 1fr 1fr; }
+  .rr-story-grid { grid-template-columns: 1fr; gap: 32px; }
+}
+
+@media (max-width: 620px) {
+  .rr-case-meta { grid-template-columns: 1fr; }
+  .rr-case-title { font-size: clamp(48px, 15vw, 76px); }
+  .rr-story-title { font-size: clamp(40px, 12vw, 62px); }
+  .rr-pillars-grid { grid-template-columns: 1fr; }
+  .rr-pillar,
+  .rr-pillar:first-child,
+  .rr-pillar:last-child,
+  .rr-pillar:nth-child(3) {
+    padding: 32px 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .rr-pillar:first-child { border-top: 0; }
+  .rr-pillar-number { margin-bottom: 18px; }
+}

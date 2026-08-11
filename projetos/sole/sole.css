@@ -1,0 +1,302 @@
+/* ==========================================================
+   SOLE CONTABILIDADE — CASE ESPECÍFICO
+   Este arquivo controla SOMENTE o projeto Sole.
+   Você pode alterar o layout deste case sem mexer na home.
+   ========================================================== */
+
+.sole-case {
+  overflow:hidden;
+}
+
+.sole-case-hero {
+  padding-top:clamp(150px, 13vw, 210px);
+  padding-bottom:clamp(64px, 7vw, 110px);
+}
+
+.sole-case-title {
+  margin-top:24px;
+  max-width:14ch;
+  font-size:clamp(58px, 7.4vw, 118px);
+}
+
+.sole-case-meta {
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:28px;
+  margin-top:clamp(48px, 5vw, 76px);
+  padding-top:24px;
+  border-top:1px solid var(--line);
+}
+
+.sole-case-meta p:not(.label) {
+  margin:12px 0 0;
+  color:var(--text);
+  font-size:14px;
+  line-height:1.55;
+}
+
+.sole-visual {
+  margin:0;
+  overflow:hidden;
+  background:#111;
+}
+
+.sole-visual img {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.sole-visual-full {
+  width:min(100%, 1920px);
+  margin-inline:auto;
+}
+
+.sole-visual-full + .sole-visual-full {
+  margin-top:12px;
+}
+
+.sole-visual-pair {
+  width:min(100%, 1920px);
+  margin:12px auto 0;
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:12px;
+}
+
+.sole-story {
+  padding-top:clamp(72px, 8vw, 126px);
+  padding-bottom:clamp(72px, 8vw, 126px);
+}
+
+.sole-story-context {
+  padding-top:clamp(86px, 9vw, 140px);
+}
+
+.sole-story-compact {
+  padding-top:clamp(68px, 7vw, 110px);
+  padding-bottom:clamp(58px, 6vw, 94px);
+}
+
+.sole-story-grid {
+  display:grid;
+  grid-template-columns:repeat(12, minmax(0, 1fr));
+  gap:clamp(24px, 3vw, 48px);
+  align-items:start;
+  margin-top:28px;
+}
+
+.sole-story-title {
+  grid-column:1 / span 7;
+  max-width:16ch;
+  font-size:clamp(42px, 4.6vw, 74px);
+  line-height:.95;
+}
+
+.sole-story-copy {
+  grid-column:9 / span 4;
+  margin:4px 0 0;
+  max-width:560px;
+  color:var(--muted);
+  font-size:clamp(16px, 1.2vw, 19px);
+  line-height:1.7;
+}
+
+.sole-story-copy-rich p {
+  margin:0;
+}
+
+.sole-story-copy-rich p + p {
+  margin-top:20px;
+}
+
+.sole-concept-section {
+  border-top:1px solid var(--line);
+}
+
+.sole-story-copy strong {
+  color:var(--text);
+  font-weight:600;
+}
+
+
+.sole-statement {
+  margin-top:28px;
+  max-width:18ch;
+  font-size:clamp(48px, 5.8vw, 92px);
+  line-height:.94;
+}
+
+.sole-result {
+  padding-top:clamp(88px, 9vw, 144px);
+  padding-bottom:clamp(76px, 8vw, 126px);
+}
+
+.sole-result-grid {
+  display:grid;
+  grid-template-columns:repeat(12, minmax(0, 1fr));
+  gap:clamp(24px, 3vw, 48px);
+  margin-top:28px;
+  align-items:end;
+}
+
+.sole-result-title {
+  grid-column:1 / span 8;
+  max-width:18ch;
+  font-size:clamp(46px, 5vw, 80px);
+}
+
+.sole-result-copy {
+  grid-column:9 / span 4;
+  margin:0;
+  color:var(--muted);
+  font-size:17px;
+  line-height:1.7;
+}
+
+.sole-next-project {
+  margin-top:clamp(86px, 9vw, 140px);
+}
+
+@media (max-width: 900px) {
+  .sole-case-meta {
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+
+  .sole-story-grid,
+  .sole-result-grid {
+    display:block;
+  }
+
+  .sole-story-copy,
+  .sole-result-copy {
+    margin-top:28px;
+    max-width:650px;
+  }
+
+  .sole-visual-pair {
+    grid-template-columns:1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .sole-case-hero {
+    padding-top:128px;
+    padding-bottom:56px;
+  }
+
+  .sole-case-title {
+    font-size:clamp(50px, 15vw, 74px);
+  }
+
+  .sole-case-meta {
+    grid-template-columns:1fr;
+    gap:22px;
+    margin-top:42px;
+  }
+
+  .sole-story,
+  .sole-story-context,
+  .sole-story-compact {
+    padding-top:64px;
+    padding-bottom:58px;
+  }
+
+  .sole-story-title {
+    font-size:clamp(38px, 11vw, 56px);
+  }
+
+  .sole-statement {
+    font-size:clamp(42px, 12vw, 62px);
+  }
+
+  .sole-visual-full + .sole-visual-full,
+  .sole-visual-pair {
+    margin-top:6px;
+  }
+
+  .sole-visual-pair {
+    gap:6px;
+  }
+
+  .sole-result {
+    padding-top:70px;
+    padding-bottom:74px;
+  }
+}
+
+/* VALORES DA MARCA — inspirado na linguagem da landing page da Sole */
+.sole-values-band {
+  background:#382417;
+  color:#f2e6d8;
+  padding-block:clamp(54px, 5vw, 82px);
+}
+
+.sole-values-grid {
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:clamp(28px, 3vw, 54px);
+}
+
+.sole-value {
+  text-align:center;
+}
+
+.sole-value-icon {
+  width:62px;
+  height:62px;
+  margin:0 auto 20px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:rgba(242,230,216,.09);
+  color:#e9c89f;
+  box-shadow:inset 0 0 0 1px rgba(242,230,216,.12);
+}
+
+.sole-value-icon svg {
+  width:24px;
+  height:24px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.7;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.sole-value h3 {
+  margin:0;
+  font-family:var(--font-body);
+  font-size:clamp(18px, 1.5vw, 24px);
+  font-weight:700;
+  letter-spacing:-.025em;
+  color:#f2e6d8;
+}
+
+.sole-value p {
+  max-width:28ch;
+  margin:12px auto 0;
+  font-size:15px;
+  line-height:1.65;
+  color:rgba(242,230,216,.72);
+}
+
+@media (max-width: 900px) {
+  .sole-values-grid {
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+    row-gap:46px;
+  }
+}
+
+@media (max-width: 560px) {
+  .sole-values-band {
+    padding-block:50px;
+  }
+  .sole-values-grid {
+    grid-template-columns:1fr;
+    gap:40px;
+  }
+  .sole-value p {
+    max-width:32ch;
+  }
+}

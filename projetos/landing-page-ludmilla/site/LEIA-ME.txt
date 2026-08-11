@@ -1,0 +1,23 @@
+LANDING PAGE — LUDMILLA NERES
+
+Projeto desenvolvido em HTML, CSS e JavaScript puro.
+
+Arquivo principal:
+index.html
+
+Estrutura:
+- index.html: conteúdo da página
+- style.css: estilos e responsividade
+- script.js: interações, carrossel e configurações
+- assets: imagens e elementos visuais
+
+A landing page pode ser hospedada de forma independente ou integrada
+ao sistema principal pelo programador responsável.
+
+Observação:
+Antes da publicação definitiva, atualizar no script.js:
+- WhatsApp
+- e-mail
+- Instagram
+- endereço
+- CRP

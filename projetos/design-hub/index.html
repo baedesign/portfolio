@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design HUB — Product Design & UX/UI | Bernardo Ramalho</title>
+  <meta name="description" content="Case do Design HUB: plataforma de solicitação e gestão de demandas de design com briefing guiado, acompanhamento por status, papéis de usuário e visão operacional.">
+  <meta name="theme-color" content="#171717">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="stylesheet" href="design-hub.css">
+  <link rel="icon" type="image/png" href="../../favicon.png">
+</head>
+<body data-page="case-custom" data-project-slug="design-hub">
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="shell nav-inner">
+      <a class="brand" data-home aria-label="BaeDesign — início">
+        <img class="brand-logo" src="../../assets/images/logo-bae.svg" alt="BaeDesign">
+      </a>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a class="nav-link" data-home-projects>Projetos</a>
+        <a class="nav-link" data-home-about>Sobre</a>
+        <a class="nav-link" data-home-experience>Experiência</a>
+        <a class="nav-link" data-home-contact>Contato</a>
+        <a class="nav-cta" data-home-contact>Vamos conversar ↗</a>
+      </nav>
+      <button class="mobile-toggle" aria-label="Abrir menu" aria-expanded="false">Menu</button>
+    </div>
+    <nav class="shell mobile-nav" aria-label="Navegação mobile">
+      <a data-home-projects>Projetos</a>
+      <a data-home-about>Sobre</a>
+      <a data-home-experience>Experiência</a>
+      <a data-home-contact>Contato</a>
+      <a class="nav-cta" data-home-contact>Vamos conversar ↗</a>
+    </nav>
+  </header>
+
+  <main class="dh-case">
+    <section class="shell dh-hero">
+      <p class="label orange reveal">01 — Design HUB</p>
+      <h1 class="display dh-hero-title reveal">Um sistema para tirar o briefing do improviso.</h1>
+      <p class="dh-hero-lead reveal">Uma plataforma criada para transformar pedidos dispersos em um fluxo de design mais claro, rastreável e profissional — da primeira solicitação à entrega final.</p>
+
+      <div class="dh-meta reveal">
+        <div><p class="label">Projeto</p><p>Produto digital autoral</p></div>
+        <div><p class="label">Ano</p><p>2026</p></div>
+        <div><p class="label">Minha atuação</p><p>Product Design · UX/UI · Estrutura de produto</p></div>
+        <div><p class="label">Estado atual</p><p>Frontend funcional · não publicado</p></div>
+      </div>
+    </section>
+
+    <section class="shell dh-stage reveal" aria-label="Visão do Administrador no Design HUB">
+      <div class="dh-screen-heading">
+        <div>
+          <p class="label orange">Visão do Administrador</p>
+          <h2 class="display dh-screen-title">A operação inteira em uma única leitura.</h2>
+          <p class="dh-screen-copy">A visão administrativa reúne equipe, prazos, gargalos, demandas ativas e próximos passos sem alterar a linguagem visual do produto.</p>
+        </div>
+        <div class="dh-theme-toggle" role="tablist" aria-label="Visualizar tema da interface">
+          <button class="active" type="button" data-admin-theme="dark" aria-selected="true">Modo escuro</button>
+          <button type="button" data-admin-theme="light" aria-selected="false">Modo claro</button>
+        </div>
+      </div>
+
+      <figure class="dh-real-interface dh-admin-interface">
+        <img id="dhAdminInterfaceImage" src="assets/design-hub-dashboard-admin-dark-real.png" alt="Dashboard real do Design HUB na visão do Administrador, em modo escuro">
+      </figure>
+      <div class="dh-real-interface-caption">
+        <p><span>INTERFACE REAL</span> Dashboard administrativo do frontend atual.</p>
+        <p id="dhAdminInterfaceCaption">Modo escuro — tela real do Design HUB, preservando sidebar, métricas, equipe, prioridades e controle de produção.</p>
+      </div>
+    </section>
+
+    <section class="shell dh-story dh-divider">
+      <p class="label orange reveal">O problema</p>
+      <div class="dh-story-grid">
+        <h2 class="display dh-story-title reveal">O gargalo não era criar. Era começar sem clareza.</h2>
+        <div class="dh-story-copy reveal">
+          <p>Pedidos de design frequentemente chegam por mensagens, e-mails e conversas isoladas. O resultado é um briefing fragmentado, histórico difícil de recuperar e pouca visibilidade sobre quem precisa agir.</p>
+          <p>O Design HUB nasceu para organizar justamente esse trecho invisível do trabalho criativo: a entrada da demanda, o alinhamento, a produção, a aprovação e o encerramento.</p>
+        </div>
+      </div>
+
+      <div class="dh-chaos-flow reveal" aria-label="Transformação do processo">
+        <div class="dh-chaos-card"><span>01</span><strong>Pedido solto</strong><small>“Preciso de uma arte para sexta.”</small></div>
+        <i>→</i>
+        <div class="dh-chaos-card"><span>02</span><strong>Briefing guiado</strong><small>Objetivo, público, conteúdo, formato e prazo.</small></div>
+        <i>→</i>
+        <div class="dh-chaos-card accent"><span>03</span><strong>Fluxo rastreável</strong><small>Status, responsáveis, arquivos, comentários e histórico.</small></div>
+      </div>
+    </section>
+
+    <section class="dh-principles">
+      <div class="shell dh-principles-grid">
+        <article class="reveal"><span>01</span><h3>Clareza</h3><p>O sistema conduz a solicitação para reduzir lacunas antes de a criação começar.</p></article>
+        <article class="reveal"><span>02</span><h3>Rastreabilidade</h3><p>Histórico, status, responsáveis e decisões permanecem vinculados à própria demanda.</p></article>
+        <article class="reveal"><span>03</span><h3>Autonomia</h3><p>Cliente acompanha o andamento sem depender de atualizações manuais a cada etapa.</p></article>
+        <article class="reveal"><span>04</span><h3>Visão macro</h3><p>Equipe visualiza prioridade, prazo e gargalos antes de decidir o que entra na fila.</p></article>
+      </div>
+    </section>
+
+    <section class="dh-product-demo-section dh-divider" id="controle-producao">
+      <div class="shell">
+        <p class="label orange reveal">Controle de produção</p>
+        <div class="dh-story-grid">
+          <h2 class="display dh-story-title reveal">A fila não é uma lista passiva. Ela vira instrumento de decisão.</h2>
+          <div class="dh-story-copy reveal">
+            <p>A visão interna foi desenhada para responder rapidamente três perguntas: o que precisa de atenção, onde cada trabalho está e quem precisa agir agora.</p>
+            <p>A demonstração abaixo reproduz a estrutura e os dados do frontend consolidado. Os filtros funcionam e as demandas podem ser abertas para explorar o fluxo.</p>
+          </div>
+        </div>
+
+        <div class="dh-product-browser reveal" data-production-demo>
+          <aside class="dh-product-sidebar" aria-label="Navegação demonstrativa do administrador">
+            <div class="dh-product-brand">
+              <img src="assets/baedesign-icon.png" alt="">
+              <div><strong>baedesign</strong><span>DEMANDAS DE DESIGN</span></div>
+            </div>
+            <nav>
+              <button type="button"><span>▦</span>Dashboard</button>
+              <button type="button" class="active"><span>✓</span>Demandas</button>
+              <button type="button"><span>♙</span>Clientes</button>
+              <button type="button"><span>♧</span>Equipe</button>
+              <button type="button"><span>◉</span>Financeiro</button>
+              <button type="button"><span>⚙</span>Configurações</button>
+            </nav>
+          </aside>
+          <div class="dh-product-main">
+            <header class="dh-product-topbar">
+              <div><strong>Controle de produção</strong><span>Fila interna da equipe, ordenada por prazo e prioridade</span></div>
+              <div class="dh-product-profile"><span>◌</span><b>BR</b><strong>Bernardo</strong></div>
+            </header>
+            <div class="dh-production-content">
+              <section class="dh-prod-toolbar">
+                <div class="dh-prod-toolbar-head">
+                  <div><span>OPERAÇÃO INTERNA</span><h3>Fila de trabalho</h3><p>A ordem considera primeiro o prazo final e, dentro da mesma faixa, Urgente → Alta → Normal → Baixa.</p></div>
+                  <div class="dh-prod-view-buttons" role="group" aria-label="Filtrar demandas">
+                    <button type="button" data-prod-filter="active" class="active">Ativas</button>
+                    <button type="button" data-prod-filter="mine">Comigo</button>
+                    <button type="button" data-prod-filter="blocked">Impedidas</button>
+                    <button type="button" data-prod-filter="approval">Aguardando gerente</button>
+                    <button type="button" data-prod-filter="all">Todas</button>
+                  </div>
+                </div>
+                <div class="dh-prod-filters">
+                  <label class="dh-prod-search"><span>⌕</span><input type="search" placeholder="Buscar demanda, empresa ou solicitante" data-prod-search></label>
+                  <select data-prod-stage aria-label="Etapa interna"><option value="all">Todas as etapas</option><option value="criacao">Criação</option><option value="planejamento">Planejamento</option></select>
+                  <select data-prod-owner aria-label="Com quem está"><option value="all">Qualquer pessoa</option><option value="bruno">Bruno</option><option value="bernardo">Bernardo</option></select>
+                </div>
+              </section>
+
+              <div class="dh-prod-list-head"><p><strong data-prod-count>3</strong> demanda(s) na fila</p><span>CLIQUE EM UMA DEMANDA PARA CONTROLAR O FLUXO</span></div>
+              <div class="dh-prod-list" data-prod-list>
+                <button class="dh-prod-row" type="button" data-demand-id="21" data-status="active" data-owner="bruno" data-stage="criacao" data-search="campanha dia dos pais empresa demo cliente demo post para redes sociais">
+                  <span class="dh-prod-index">1</span>
+                  <div class="dh-prod-name"><div><span>#BAE-0021</span><em class="priority alta">Alta</em></div><strong>Campanha Dia dos Pais</strong><small>Empresa Demo · Post para redes sociais</small></div>
+                  <div><small>PRAZO FINAL</small><strong>15/08/2026</strong><em class="deadline">5 dias restantes</em></div>
+                  <div><small>FLUXO INTERNO</small><strong>Criação</strong><em>Com: Bruno · há 6 dias</em></div>
+                  <div><small>EQUIPE</small><strong>1 envolvido</strong><em class="status producao">Em produção</em></div>
+                  <span class="dh-prod-arrow">→</span>
+                </button>
+                <button class="dh-prod-row" type="button" data-demand-id="22" data-status="approval" data-owner="bernardo" data-stage="planejamento" data-search="apresentação comercial empresa demo marina costa apresentação">
+                  <span class="dh-prod-index">2</span>
+                  <div class="dh-prod-name"><div><span>#BAE-0022</span><em class="priority normal">Normal</em></div><strong>Apresentação Comercial</strong><small>Empresa Demo · Apresentação</small></div>
+                  <div><small>PRAZO FINAL</small><strong>20/08/2026</strong><em>10 dias restantes</em></div>
+                  <div><small>FLUXO INTERNO</small><strong>Planejamento</strong><em>Com: Cliente</em></div>
+                  <div><small>EQUIPE</small><strong>1 envolvido</strong><em class="status aprovacao">Aguardando aprovação</em></div>
+                  <span class="dh-prod-arrow">→</span>
+                </button>
+                <button class="dh-prod-row" type="button" data-demand-id="23" data-status="closed" data-owner="bernardo" data-stage="planejamento" data-search="banner institucional empresa demo cliente demo banner">
+                  <span class="dh-prod-index">3</span>
+                  <div class="dh-prod-name"><div><span>#BAE-0023</span><em class="priority normal">Normal</em></div><strong>Banner Institucional</strong><small>Empresa Demo · Banner</small></div>
+                  <div><small>ENCERRAMENTO</small><strong>30/07/2026</strong><em>Finalizada em</em></div>
+                  <div><small>FLUXO INTERNO</small><strong>Finalização concluída</strong><em>Sem etapas pendentes</em></div>
+                  <div><small>EQUIPE</small><strong>1 envolvido</strong><em class="status finalizada">Finalizada</em></div>
+                  <span class="dh-prod-arrow">→</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dh-demo-caption"><p><span>DEMONSTRAÇÃO INTERATIVA</span> Estrutura baseada diretamente em <code>app.demandas.tsx</code> e no estado de demonstração do produto.</p><p>Experimente os filtros e abra uma demanda. A interação mostra como o sistema transforma status, prazo, equipe e próxima ação em informação operacional.</p></div>
+      </div>
+
+      <div class="dh-workflow-modal" data-workflow-modal aria-hidden="true">
+        <button class="dh-modal-backdrop" type="button" data-close-workflow aria-label="Fechar"></button>
+        <div class="dh-workflow-dialog" role="dialog" aria-modal="true" aria-labelledby="dhWorkflowTitle">
+          <header>
+            <div><span data-modal-protocol>#BAE-0021</span><div><h3 id="dhWorkflowTitle" data-modal-name>Campanha Dia dos Pais</h3><em data-modal-priority>Alta</em></div><p data-modal-company>Empresa Demo · Post para redes sociais</p></div>
+            <div class="dh-modal-deadline"><small>PRAZO FINAL</small><strong data-modal-deadline>15/08/2026</strong><em data-modal-urgency>5 dias restantes</em></div>
+            <button type="button" class="dh-modal-close" data-close-workflow aria-label="Fechar modal">×</button>
+          </header>
+          <div class="dh-workflow-grid">
+            <div class="dh-workflow-primary">
+              <section class="dh-workflow-card">
+                <span class="dh-workflow-eyebrow">FLUXO ATUAL</span>
+                <div class="dh-workflow-stage"><div><small>Etapa interna</small><strong data-modal-stage>Criação</strong></div><div><small>Com quem está</small><strong data-modal-owner>Bruno</strong></div></div>
+                <div class="dh-workflow-next"><small>Próxima ação</small><p data-modal-next>Preparar primeira versão para revisão interna.</p></div>
+              </section>
+              <section class="dh-workflow-card">
+                <span class="dh-workflow-eyebrow">EQUIPE ENVOLVIDA</span>
+                <div class="dh-team-person"><b data-modal-initials>BR</b><div><strong data-modal-team>Bruno</strong><small>Responsável principal</small></div><em>COM ELE AGORA</em></div>
+              </section>
+              <section class="dh-workflow-card dh-handoff-card">
+                <span class="dh-workflow-eyebrow">CONCLUIR ETAPA E REPASSAR</span>
+                <div class="dh-handoff-fields"><label>Próxima etapa<select data-handoff-stage><option>Revisão interna</option><option>Ajustes internos</option><option>Preparação para aprovação</option></select></label><label>Próximo responsável<select data-handoff-owner><option>Bernardo</option><option>Bruno</option></select></label></div>
+                <label>Próxima ação<textarea rows="2" data-handoff-action>Revisar versão e preparar retorno.</textarea></label>
+                <button type="button" data-demo-handoff>Concluir etapa e repassar →</button>
+              </section>
+            </div>
+            <aside class="dh-workflow-secondary">
+              <section class="dh-workflow-card"><span class="dh-workflow-eyebrow">CONTROLE ADMINISTRATIVO</span><label>Prioridade<select data-admin-priority><option>Alta</option><option>Urgente</option><option>Normal</option><option>Baixa</option></select></label><label>Prazo final<input type="date" value="2026-08-15"></label><label>Próxima ação<textarea rows="2">Preparar primeira versão para revisão interna.</textarea></label></section>
+              <section class="dh-workflow-card"><span class="dh-workflow-eyebrow">RESUMO DA DEMANDA</span><dl><div><dt>Solicitante</dt><dd>Cliente Demo</dd></div><div><dt>Equipe</dt><dd>1 pessoa</dd></div><div><dt>Status do cliente</dt><dd data-modal-client-status>Em produção</dd></div></dl><button type="button" class="secondary">Abrir demanda completa ↗</button></section>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell dh-story dh-divider" id="briefing-guiado">
+      <p class="label orange reveal">Briefing guiado · Visão do Cliente</p>
+      <div class="dh-story-grid">
+        <h2 class="display dh-story-title reveal">O cliente não recebe um formulário. Recebe uma sequência de decisões.</h2>
+        <div class="dh-story-copy reveal">
+          <p>No frontend real, a solicitação é dividida em dez etapas e o progresso é mostrado de forma simples: título da etapa, contador e barra de avanço.</p>
+          <p>A demonstração abaixo segue os mesmos títulos, campos e regras principais de <code>app.nova-solicitacao.tsx</code>. Você pode percorrer o briefing como um cliente faria.</p>
+        </div>
+      </div>
+
+      <div class="dh-product-browser dh-client-browser reveal" data-briefing-live>
+        <aside class="dh-product-sidebar" aria-label="Navegação demonstrativa do cliente">
+          <div class="dh-product-brand"><img src="assets/baedesign-icon.png" alt=""><div><strong>baedesign</strong><span>DEMANDAS DE DESIGN</span></div></div>
+          <nav><button type="button"><span>▦</span>Dashboard</button><button type="button" class="active"><span>＋</span>Nova solicitação</button><button type="button"><span>▣</span>Minha empresa</button><button type="button"><span>○</span>Meu perfil</button></nav>
+        </aside>
+        <div class="dh-product-main">
+          <header class="dh-product-topbar"><div><strong>Nova solicitação</strong><span data-briefing-topdesc>Etapa 1 de 10 — Tipo de demanda</span></div><div class="dh-product-profile"><span>◌</span><b>CD</b><strong>Cliente Demo</strong></div></header>
+          <div class="dh-client-content">
+            <div class="dh-client-form-wrap">
+              <div class="dh-client-progress-head"><strong data-briefing-step-title>Tipo de demanda</strong><span data-briefing-counter>1 / 10</span></div>
+              <div class="dh-client-progress"><i data-briefing-progress></i></div>
+              <section class="dh-client-card"><div data-briefing-body></div></section>
+              <div class="dh-client-actions"><button type="button" class="outline" data-briefing-back disabled>← Voltar</button><button type="button" class="primary" data-briefing-next>Continuar →</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dh-demo-caption"><p><span>DEMONSTRAÇÃO INTERATIVA</span> Fluxo de cliente reproduzido a partir da estrutura real da nova solicitação.</p><p>O objetivo não é criar uma interface paralela para o portfólio: é permitir que o leitor experimente a lógica que já existe no produto.</p></div>
+    </section>
+
+    <section class="dh-roles-section">
+      <div class="shell">
+        <p class="label dh-light-label reveal">Arquitetura de acesso</p>
+        <div class="dh-story-grid dh-dark-story">
+          <h2 class="display dh-story-title reveal">O mesmo produto muda de perspectiva conforme quem entra.</h2>
+          <div class="dh-story-copy reveal"><p>O produto trabalha com quatro papéis internos/externos. Em vez de expor a mesma interface para todos, menus, ações e informações se adaptam à responsabilidade de cada pessoa.</p></div>
+        </div>
+
+        <div class="dh-role-matrix reveal" aria-label="Papéis e acessos do Design HUB">
+          <article><span>01</span><h3>Administrador</h3><p>Visão completa da operação, com gestão de demandas, clientes, equipe, financeiro e configurações.</p><small>Dashboard · Demandas · Clientes · Equipe · Financeiro · Configurações</small></article>
+          <article><span>02</span><h3>Gerente</h3><p>Acompanha a operação criativa, participa de aprovações e acessa os recursos necessários à gestão do fluxo.</p><small>Dashboard · Demandas · Clientes · Equipe · Faturamento · Configurações</small></article>
+          <article><span>03</span><h3>Colaborador</h3><p>Trabalha diretamente nas demandas e acompanha clientes, equipe e responsabilidades ligadas à execução.</p><small>Dashboard · Demandas · Clientes · Equipe · Configurações</small></article>
+          <article><span>04</span><h3>Cliente</h3><p>Solicita trabalhos, acompanha o andamento e acessa apenas as informações relacionadas à própria empresa.</p><small>Dashboard · Nova solicitação · Minha empresa · Meu perfil</small></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell dh-story dh-divider">
+      <p class="label orange reveal">Fluxo operacional</p>
+      <div class="dh-story-grid">
+        <h2 class="display dh-story-title reveal">Status deixam de ser etiqueta e passam a representar responsabilidade.</h2>
+        <div class="dh-story-copy reveal">
+          <p>O fluxo diferencia análise, pendência de informação, espera por produção, produção ativa, aprovação do cliente e ajustes. Isso deixa mais claro onde a demanda está e, principalmente, de quem é a próxima ação.</p>
+          <p>Recusas e cancelamentos continuam registrados como encerramentos alternativos, preservando o histórico do projeto.</p>
+        </div>
+      </div>
+
+      <div class="dh-flow reveal" aria-label="Fluxo de status do Design HUB">
+        <div><span>01</span><strong>Solicitação enviada</strong></div><i>→</i>
+        <div><span>02</span><strong>Em análise</strong></div><i>→</i>
+        <div class="conditional"><span>03</span><strong>Informações pendentes</strong><small>quando necessário</small></div><i>→</i>
+        <div><span>04</span><strong>Aguardando produção</strong></div><i>→</i>
+        <div class="active"><span>05</span><strong>Em produção</strong></div><i>→</i>
+        <div><span>06</span><strong>Aguardando aprovação</strong></div><i>→</i>
+        <div><span>07</span><strong>Ajustes solicitados</strong></div><i>→</i>
+        <div class="done"><span>08</span><strong>Finalizada</strong></div>
+      </div>
+    </section>
+
+    <section class="shell dh-story dh-divider">
+      <p class="label orange reveal">Detalhe da demanda</p>
+      <div class="dh-story-grid">
+        <h2 class="display dh-story-title reveal">O detalhe não é uma tela separada da operação. É onde a decisão acontece.</h2>
+        <div class="dh-story-copy reveal"><p>Na fila acima, clique em qualquer demanda para abrir o controle operacional. O modal segue a lógica real do produto: etapa interna, responsável atual, equipe, próxima ação, handoff e controle administrativo ficam no mesmo contexto.</p><p>Essa escolha reduz a troca constante de páginas quando o objetivo é apenas entender o estado do trabalho e decidir o próximo passo.</p></div>
+      </div>
+    </section>
+
+    <section class="shell dh-story dh-divider">
+      <p class="label orange reveal">Ecossistema</p>
+      <div class="dh-story-grid">
+        <h2 class="display dh-story-title reveal">A demanda é o centro. O restante do produto existe para dar contexto a ela.</h2>
+        <div class="dh-story-copy reveal"><p>O Design HUB cresceu além da solicitação: empresas, colaboradores, notificações, permissões, arquivos, financeiro e preferências de aparência passam a orbitar o mesmo fluxo operacional.</p></div>
+      </div>
+
+      <div class="dh-module-grid reveal">
+        <article><span>01</span><h3>Dashboard</h3><p>Visão por status, prioridade, prazo e responsabilidade.</p></article>
+        <article><span>02</span><h3>Demandas</h3><p>Fila completa com filtros e controle do fluxo.</p></article>
+        <article><span>03</span><h3>Clientes</h3><p>Empresas, solicitantes e histórico de projetos relacionados.</p></article>
+        <article><span>04</span><h3>Equipe</h3><p>Papéis internos, responsáveis, handoffs e permissões.</p></article>
+        <article><span>05</span><h3>Financeiro</h3><p>Liberação de demandas finalizadas, cobranças e comprovantes.</p></article>
+        <article><span>06</span><h3>Notificações</h3><p>Eventos operacionais, aprovações e atualizações financeiras.</p></article>
+      </div>
+    </section>
+
+    <section class="dh-theme-section">
+      <div class="shell dh-theme-grid">
+        <div class="dh-theme-copy reveal">
+          <p class="label dh-light-label">Sistema visual</p>
+          <h2 class="display">A identidade da BaeDesign virou interface de produto.</h2>
+          <p>Preto, creme e laranja formam a base do sistema. Superfícies discretas, cantos amplos e hierarquia tipográfica mantêm o produto alinhado à linguagem visual da marca sem competir com a informação operacional.</p>
+          <p>O produto possui modo escuro e claro. A troca de tema aparece acima na própria visão administrativa, em vez de ser simulada por componentes inventados dentro do case.</p>
+        </div>
+        <div class="dh-token-grid reveal" aria-label="Tokens principais do sistema visual">
+          <article class="dark-token"><span>#171717</span><strong>Base escura</strong></article>
+          <article class="orange-token"><span>#D95508</span><strong>Acento</strong></article>
+          <article class="cream-token"><span>#FFF0CF</span><strong>Contraste</strong></article>
+          <article class="light-token"><span>#F4F1EB</span><strong>Base clara</strong></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell dh-feature dh-divider dh-maturity">
+      <div class="dh-feature-copy reveal">
+        <p class="label orange">Estado do produto</p>
+        <h2 class="display">Funcional o suficiente para validar. Ainda não pronto para produção real.</h2>
+        <p>A versão atual consolida o frontend e as regras de interação do produto. Rotas, papéis, fluxo de demandas, notificações e regras financeiras foram auditados e validados no código.</p>
+        <p>Como a persistência ainda é local e as credenciais são de demonstração, o produto não foi publicado para uso real. A próxima etapa é migrar autenticação, dados e arquivos para backend.</p>
+      </div>
+      <div class="dh-tech-panel reveal">
+        <div class="dh-tech-head"><span>Frontend consolidado</span><strong>VALIDADO</strong></div>
+        <div class="dh-tech-row"><span>React + TypeScript</span><b>✓</b></div>
+        <div class="dh-tech-row"><span>TanStack Start / Router</span><b>✓</b></div>
+        <div class="dh-tech-row"><span>Rotas internas auditadas</span><b>✓</b></div>
+        <div class="dh-tech-row"><span>TypeScript estrito</span><b>0 erros</b></div>
+        <div class="dh-tech-row"><span>ESLint</span><b>0 erros bloqueantes</b></div>
+        <div class="dh-tech-row muted-row"><span>Persistência</span><b>localStorage → backend</b></div>
+      </div>
+    </section>
+
+    <section class="dh-closing">
+      <div class="shell dh-closing-inner">
+        <p class="label orange reveal">O que este projeto representa</p>
+        <h2 class="display reveal">Design não termina na interface. Ele também organiza decisões, pessoas e processos.</h2>
+        <p class="reveal">O Design HUB é um exercício de produto aplicado a uma dor real da rotina criativa: transformar informação dispersa em um sistema utilizável. É o projeto que melhor sintetiza minha aproximação entre design visual, experiência, operação e tecnologia.</p>
+        <div class="dh-project-state reveal"><span></span>Projeto autoral em desenvolvimento · sem publicação pública</div>
+      </div>
+    </section>
+
+    <section id="contato" class="final-cta">
+      <div class="shell final-cta-inner">
+        <h2 class="display cta-title">Tem um desafio<br>que precisa<br>de design?</h2>
+        <div class="cta-bottom">
+          <p class="cta-text">Estou aberto a novas oportunidades, projetos e boas conversas.</p>
+          <div class="cta-links">
+            <div class="cta-links-row"><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a><a data-link="email">E-mail ↗</a></div>
+            <a class="cta-email" data-link="email"><span data-site-email></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><div class="footer-name"><span data-site-name></span><span class="orange">™</span></div><p class="footer-text"><span data-site-person></span><br><span data-site-role></span></p></div>
+      <div><p class="label">Onde</p><p class="footer-text" data-site-location></p></div>
+      <div><p class="label">Social</p><ul class="footer-links"><li><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a data-link="behance" target="_blank" rel="noopener">Behance ↗</a></li><li><a data-link="instagram" target="_blank" rel="noopener">Instagram ↗</a></li></ul></div>
+      <div><p class="footer-text" data-site-tagline></p><p class="label" style="margin-top:28px">© 2026</p></div>
+    </div>
+  </footer>
+
+  <script src="../../data.js"></script>
+  <script src="../../script.js"></script>
+  <script src="design-hub.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+SOLE CONTABILIDADE — LANDING PAGE EDITÁVEL
+
+ESTRUTURA
+---------
+index.html  = conteúdo e estrutura da página
+style.css   = cores, tipografia, espaçamentos, layout e responsividade
+script.js   = menu mobile, scroll, animações e formulário
+assets/     = imagens e logotipos
+favicon.ico = ícone do navegador
+
+TIPOGRAFIA
+----------
+A TT Commons Pro está sendo carregada pelo Adobe Fonts através deste projeto:
+https://use.typekit.net/vjv5njz.css
+
+No CSS, a família usada é:
+font-family: "tt-commons-pro", sans-serif;
+
+Se você mudar o projeto do Adobe Fonts, altere a tag <link> no <head> do index.html.
+
+COMO EDITAR
+-----------
+Textos: index.html
+Cores: style.css > :root
+Tamanho do título do hero: style.css > .hero-title
+Imagem principal: assets/images/hero.jpg
+Logos: assets/logos/
+Comportamentos e formulário: script.js
+
+FORMULÁRIO
+----------
+O formulário ainda não possui backend real conectado.
+Procure por enviarLeadSole() em script.js para integrar WhatsApp, Formspree, webhook, CRM ou API.

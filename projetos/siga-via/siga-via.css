@@ -1,0 +1,205 @@
+:root {
+  --siga-yellow: #ffd900;
+  --siga-black: #000000;
+  --siga-white: #ffffff;
+  --siga-light: #dedede;
+}
+
+.siga-accent { color: var(--siga-yellow); }
+
+.siga-case-hero {
+  padding-top: clamp(150px, 15vw, 230px);
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+
+.siga-case-title {
+  max-width: 1300px;
+  margin-top: 22px;
+  font-size: clamp(56px, 7.2vw, 124px);
+  line-height: .89;
+  letter-spacing: -.055em;
+}
+
+.siga-case-meta {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+  margin-top: clamp(64px, 8vw, 110px);
+  padding-top: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.siga-case-meta > div { min-width: 0; }
+
+.siga-case-meta p:not(.label) {
+  margin-top: 10px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.siga-visual {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+.siga-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.siga-visual-full { width: 100%; }
+
+.siga-visual-contained {
+  width: min(calc(100% - (var(--pad) * 2)), var(--max));
+  margin-inline: auto;
+}
+
+.siga-visual-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  width: 100%;
+  background: var(--line);
+}
+
+.siga-visual-pair-light { background: #d8d8d8; }
+
+.siga-story {
+  padding-top: clamp(92px, 10vw, 150px);
+  padding-bottom: clamp(92px, 10vw, 150px);
+}
+
+.siga-story-compact {
+  padding-top: clamp(70px, 8vw, 118px);
+  padding-bottom: clamp(70px, 8vw, 118px);
+}
+
+.siga-divider-section { border-top: 1px solid var(--line); }
+
+.siga-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 7fr) minmax(300px, 4fr);
+  gap: clamp(48px, 8vw, 130px);
+  align-items: start;
+  margin-top: 22px;
+}
+
+.siga-story-title {
+  max-width: 960px;
+  font-size: clamp(46px, 5.8vw, 94px);
+  line-height: .94;
+  letter-spacing: -.045em;
+}
+
+.siga-story-copy {
+  max-width: 600px;
+  color: var(--muted);
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.65;
+}
+
+.siga-story-copy p + p { margin-top: 24px; }
+.siga-story-copy strong { color: var(--text); }
+
+.siga-attributes {
+  background: #171717;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.siga-attributes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding-top: clamp(58px, 6vw, 88px);
+  padding-bottom: clamp(58px, 6vw, 88px);
+}
+
+.siga-attribute {
+  min-height: 260px;
+  padding: 18px clamp(30px, 4vw, 64px) 24px;
+  border-left: 1px solid var(--line);
+}
+
+.siga-attribute:first-child {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.siga-attribute:last-child { padding-right: 0; }
+
+.siga-attribute-number {
+  display: block;
+  margin-bottom: 42px;
+  color: var(--siga-yellow);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+
+.siga-attribute h3 {
+  margin: 0 0 18px;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: clamp(31px, 3vw, 54px);
+  line-height: .95;
+  letter-spacing: -.04em;
+}
+
+.siga-attribute p {
+  max-width: 380px;
+  margin: 0;
+  color: rgba(255,255,255,.62);
+  line-height: 1.65;
+}
+
+.siga-attribute::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 4px;
+  margin-top: 34px;
+  background: var(--siga-yellow);
+}
+
+.siga-closing {
+  position: relative;
+}
+
+.siga-closing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
+  width: clamp(58px, 5vw, 82px);
+  height: 4px;
+  background: var(--siga-yellow);
+}
+
+@media (max-width: 900px) {
+  .siga-case-hero { padding-top: 132px; }
+  .siga-case-meta { grid-template-columns: 1fr 1fr; }
+  .siga-story-grid { grid-template-columns: 1fr; gap: 32px; }
+  .siga-attributes-grid { grid-template-columns: 1fr; }
+  .siga-attribute,
+  .siga-attribute:first-child,
+  .siga-attribute:last-child {
+    min-height: 0;
+    padding: 34px 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+  .siga-attribute:first-child { border-top: 0; }
+  .siga-attribute-number { margin-bottom: 20px; }
+}
+
+@media (max-width: 700px) {
+  .siga-visual-pair { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .siga-case-meta { grid-template-columns: 1fr; }
+  .siga-case-title { font-size: clamp(48px, 15vw, 76px); }
+  .siga-story-title { font-size: clamp(40px, 12vw, 62px); }
+}
