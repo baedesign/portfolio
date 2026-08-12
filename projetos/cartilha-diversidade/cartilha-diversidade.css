@@ -212,8 +212,6 @@
   line-height: 1.7;
 }
 
-.subsea-next-project { margin-top: clamp(82px, 10vw, 150px); }
-
 @media (max-width: 900px) {
   .subsea-case-hero { padding-top: 132px; }
   .subsea-case-meta { grid-template-columns: 1fr 1fr; }

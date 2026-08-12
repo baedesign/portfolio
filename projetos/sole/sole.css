@@ -154,10 +154,6 @@
   line-height:1.7;
 }
 
-.sole-next-project {
-  margin-top:clamp(86px, 9vw, 140px);
-}
-
 @media (max-width: 900px) {
   .sole-case-meta {
     grid-template-columns:repeat(2, minmax(0, 1fr));

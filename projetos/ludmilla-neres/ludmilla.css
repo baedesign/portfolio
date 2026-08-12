@@ -237,10 +237,6 @@
   color: var(--muted);
 }
 
-.ludmilla-next-project {
-  margin-top: clamp(76px, 9vw, 132px);
-}
-
 @media (max-width: 1000px) {
   .ludmilla-values-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

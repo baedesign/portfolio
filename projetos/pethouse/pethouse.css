@@ -168,7 +168,6 @@
   line-height: 1.65;
   color: var(--muted);
 }
-.pethouse-next-project { margin-top: clamp(76px, 9vw, 132px); }
 
 @media (max-width: 900px) {
   .pethouse-story-title { grid-column: 1 / span 7; }
