@@ -330,62 +330,46 @@
       </div>
     </section>
 
-    <section id="estado-produto" class="shell dh-divider dh-maturity">
-      <div class="dh-maturity-heading reveal">
-        <p class="label orange">Estado do produto</p>
-        <h2 class="display dh-maturity-title">
-          <span>A experiência está pronta.</span>
-          <span>A infraestrutura é o próximo capítulo.</span>
-        </h2>
-      </div>
+    <section class="shell dh-divider dh-maturity">
+      <div class="dh-maturity-layout">
+        <div class="dh-maturity-intro reveal">
+          <p class="label orange">Estado do produto</p>
+          <h2 class="display">Frontend validado. Próximo passo: produção real.</h2>
+          <p class="dh-maturity-kicker">A interface principal e as regras centrais do produto já foram consolidadas. Agora o foco deixa de ser validar fluxo e passa a ser preparar a infraestrutura para uso real.</p>
 
-      <div class="dh-maturity-overview">
-        <div class="dh-maturity-mark reveal" aria-label="Frontend validado">
-          <span>STATUS ATUAL</span>
-          <strong>VALIDADO</strong>
-          <p>Frontend funcional, fluxos principais consolidados e regras centrais auditadas.</p>
+          <div class="dh-maturity-status" aria-label="Estado atual do Design HUB">
+            <span class="dh-maturity-dot" aria-hidden="true"></span>
+            <div>
+              <small>ESTADO ATUAL</small>
+              <strong>Estrutura funcional e auditada no frontend</strong>
+            </div>
+          </div>
         </div>
 
-        <div class="dh-maturity-copy reveal">
-          <p>O Design HUB já consegue demonstrar a experiência completa do produto: papéis, solicitações, produção, aprovações, notificações e regras financeiras funcionam na camada de interface.</p>
-          <p>O próximo ciclo não é redesenhar a experiência. É preparar a base técnica para operação real, conectando autenticação, banco de dados, arquivos e persistência em backend.</p>
+        <div class="dh-maturity-side">
+          <div class="dh-maturity-copy reveal">
+            <p>Rotas, papéis de acesso, fluxo de demandas, notificações e regras financeiras já foram organizados e testados na camada de interface. O produto consegue demonstrar com clareza a lógica de uso e a experiência esperada.</p>
+            <p>O que ainda separa o projeto de um ambiente de produção é a infraestrutura: autenticação, banco de dados, upload de arquivos e persistência em backend. Ou seja, o desenho do produto está pronto para evoluir — o próximo ciclo é técnico.</p>
+          </div>
+
+          <div class="dh-tech-panel reveal">
+            <div class="dh-tech-head"><span>Checklist de validação</span><strong>VALIDADO</strong></div>
+            <div class="dh-tech-row"><span>React + TypeScript</span><b>✓</b></div>
+            <div class="dh-tech-row"><span>TanStack Start / Router</span><b>✓</b></div>
+            <div class="dh-tech-row"><span>Rotas internas auditadas</span><b>✓</b></div>
+            <div class="dh-tech-row"><span>TypeScript estrito</span><b>0 erros</b></div>
+            <div class="dh-tech-row"><span>ESLint</span><b>0 bloqueantes</b></div>
+            <div class="dh-tech-row muted-row"><span>Próximo ciclo</span><b>backend + autenticação</b></div>
+          </div>
         </div>
-      </div>
-
-      <div class="dh-maturity-roadmap reveal" aria-label="Roadmap de maturidade do Design HUB">
-        <article class="done">
-          <div class="dh-roadmap-top"><span>01</span><b>CONCLUÍDO</b></div>
-          <h3>Produto</h3>
-          <p>Interface, fluxos, papéis e lógica operacional consolidados.</p>
-        </article>
-        <article class="next">
-          <div class="dh-roadmap-top"><span>02</span><b>PRÓXIMO CICLO</b></div>
-          <h3>Infraestrutura</h3>
-          <p>Backend, autenticação, banco de dados e upload de arquivos.</p>
-        </article>
-        <article>
-          <div class="dh-roadmap-top"><span>03</span><b>DEPOIS</b></div>
-          <h3>Operação real</h3>
-          <p>Deploy, usuários reais e evolução orientada pelo uso do produto.</p>
-        </article>
-      </div>
-
-      <div class="dh-tech-strip reveal" aria-label="Indicadores técnicos do frontend">
-        <div><span>STACK</span><strong>React + TypeScript</strong></div>
-        <div><span>ROTAS</span><strong>Auditadas</strong></div>
-        <div><span>TYPESCRIPT</span><strong>0 erros</strong></div>
-        <div><span>ESLINT</span><strong>0 bloqueantes</strong></div>
       </div>
     </section>
 
     <section class="dh-closing">
       <div class="shell dh-closing-inner">
         <p class="label orange reveal">O que este projeto representa</p>
-        <h2 class="display dh-closing-title reveal">
-          <span>Design não termina na interface.</span>
-          <span>Ele também organiza decisões, pessoas e processos.</span>
-        </h2>
-        <p class="dh-closing-copy reveal">O Design HUB é um exercício de produto aplicado a uma dor real da rotina criativa: transformar informação dispersa em um sistema utilizável. É o projeto que melhor sintetiza minha aproximação entre design visual, experiência, operação e tecnologia.</p>
+        <h2 class="display reveal">Design não termina na interface. Ele também organiza decisões, pessoas e processos.</h2>
+        <p class="reveal">O Design HUB é um exercício de produto aplicado a uma dor real da rotina criativa: transformar informação dispersa em um sistema utilizável. É o projeto que melhor sintetiza minha aproximação entre design visual, experiência, operação e tecnologia.</p>
         <div class="dh-project-state reveal"><span></span>Projeto autoral em desenvolvimento · sem publicação pública</div>
       </div>
     </section>
@@ -417,11 +401,18 @@
             <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
           </a>
         </div>
-
-        <p class="project-contact-copyright">© 2026 · Bernardo Ramalho</p>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-closing">
+      <p class="footer-closing-message">
+        Se algum desses projetos fez você imaginar o que podemos construir juntos, acho que já temos um bom motivo para conversar.
+      </p>
+      <p class="footer-copyright">© 2026 · Bernardo Ramalho</p>
+    </div>
+  </footer>
 
   <script src="../../data.js"></script>
   <script src="../../script.js"></script>
