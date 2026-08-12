@@ -330,21 +330,48 @@
       </div>
     </section>
 
-    <section class="shell dh-feature dh-divider dh-maturity">
-      <div class="dh-feature-copy reveal">
+    <section id="estado-produto" class="shell dh-divider dh-maturity">
+      <div class="dh-maturity-head reveal">
         <p class="label orange">Estado do produto</p>
-        <h2 class="display">Funcional o suficiente para validar. Ainda não pronto para produção real.</h2>
-        <p>A versão atual consolida o frontend e as regras de interação do produto. Rotas, papéis, fluxo de demandas, notificações e regras financeiras foram auditados e validados no código.</p>
-        <p>Como a persistência ainda é local e as credenciais são de demonstração, o produto não foi publicado para uso real. A próxima etapa é migrar autenticação, dados e arquivos para backend.</p>
+        <h2 class="display">A experiência está pronta. A infraestrutura é o próximo capítulo.</h2>
       </div>
-      <div class="dh-tech-panel reveal">
-        <div class="dh-tech-head"><span>Frontend consolidado</span><strong>VALIDADO</strong></div>
-        <div class="dh-tech-row"><span>React + TypeScript</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>TanStack Start / Router</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>Rotas internas auditadas</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>TypeScript estrito</span><b>0 erros</b></div>
-        <div class="dh-tech-row"><span>ESLint</span><b>0 erros bloqueantes</b></div>
-        <div class="dh-tech-row muted-row"><span>Persistência</span><b>localStorage → backend</b></div>
+
+      <div class="dh-maturity-overview">
+        <div class="dh-maturity-mark reveal" aria-label="Frontend validado">
+          <span>STATUS ATUAL</span>
+          <strong>VALIDADO</strong>
+          <p>Frontend funcional, fluxos principais consolidados e regras centrais auditadas.</p>
+        </div>
+
+        <div class="dh-maturity-copy reveal">
+          <p>O Design HUB já consegue demonstrar a experiência completa do produto: papéis, solicitações, produção, aprovações, notificações e regras financeiras funcionam na camada de interface.</p>
+          <p>O próximo ciclo não é redesenhar a experiência. É preparar a base técnica para operação real, conectando autenticação, banco de dados, arquivos e persistência em backend.</p>
+        </div>
+      </div>
+
+      <div class="dh-maturity-roadmap reveal" aria-label="Roadmap de maturidade do Design HUB">
+        <article class="done">
+          <div class="dh-roadmap-top"><span>01</span><b>CONCLUÍDO</b></div>
+          <h3>Produto</h3>
+          <p>Interface, fluxos, papéis e lógica operacional consolidados.</p>
+        </article>
+        <article class="next">
+          <div class="dh-roadmap-top"><span>02</span><b>PRÓXIMO CICLO</b></div>
+          <h3>Infraestrutura</h3>
+          <p>Backend, autenticação, banco de dados e upload de arquivos.</p>
+        </article>
+        <article>
+          <div class="dh-roadmap-top"><span>03</span><b>DEPOIS</b></div>
+          <h3>Operação real</h3>
+          <p>Deploy, usuários reais e evolução orientada pelo uso do produto.</p>
+        </article>
+      </div>
+
+      <div class="dh-tech-strip reveal" aria-label="Indicadores técnicos do frontend">
+        <div><span>STACK</span><strong>React + TypeScript</strong></div>
+        <div><span>ROTAS</span><strong>Auditadas</strong></div>
+        <div><span>TYPESCRIPT</span><strong>0 erros</strong></div>
+        <div><span>ESLINT</span><strong>0 bloqueantes</strong></div>
       </div>
     </section>
 
@@ -357,26 +384,43 @@
       </div>
     </section>
 
-    <section id="contato" class="final-cta">
-      <div class="shell final-cta-inner">
-        <h2 class="display cta-title">Tem um desafio<br>que precisa<br>de design?</h2>
-        <div class="cta-bottom">
-          <p class="cta-text">Estou aberto a novas oportunidades, projetos e boas conversas.</p>
-          <div class="cta-links">
-            <div class="cta-links-row"><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a><a data-link="email">E-mail ↗</a></div>
-            <a class="cta-email" data-link="email"><span data-site-email></span></a>
-          </div>
+    <section id="contato" class="contact-section">
+      <div class="shell contact-shell">
+        <div class="contact-intro reveal">
+          <p class="label orange">Contato</p>
+          <h2 class="display contact-title">Vamos conversar sobre o que você está construindo.</h2>
+          <p class="contact-copy">Projeto, oportunidade profissional ou uma boa troca sobre design — escolha o canal que fizer mais sentido.</p>
+        </div>
+
+        <div class="contact-channels reveal" aria-label="Canais de contato">
+          <a class="contact-channel" data-link="linkedin" target="_blank" rel="noopener">
+            <span class="contact-channel-type">LinkedIn</span>
+            <strong>Conectar profissionalmente</strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
+
+          <a class="contact-channel" data-link="email">
+            <span class="contact-channel-type">E-mail</span>
+            <strong data-site-email></strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
+
+          <a class="contact-channel" data-link="whatsapp" target="_blank" rel="noopener">
+            <span class="contact-channel-type">WhatsApp</span>
+            <strong>Conversar agora</strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div><div class="footer-name"><span data-site-name></span><span class="orange">™</span></div><p class="footer-text"><span data-site-person></span><br><span data-site-role></span></p></div>
-      <div><p class="label">Onde</p><p class="footer-text" data-site-location></p></div>
-      <div><p class="label">Social</p><ul class="footer-links"><li><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a data-link="behance" target="_blank" rel="noopener">Behance ↗</a></li><li><a data-link="instagram" target="_blank" rel="noopener">Instagram ↗</a></li></ul></div>
-      <div><p class="footer-text" data-site-tagline></p><p class="label" style="margin-top:28px">© 2026</p></div>
+    <div class="shell footer-closing">
+      <p class="footer-closing-message">
+        Se algum desses projetos fez você imaginar o que podemos construir juntos, acho que já temos um bom motivo para conversar.
+      </p>
+      <p class="footer-copyright">© 2026 · Bernardo Ramalho</p>
     </div>
   </footer>
 
