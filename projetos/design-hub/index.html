@@ -330,21 +330,35 @@
       </div>
     </section>
 
-    <section class="shell dh-feature dh-divider dh-maturity">
-      <div class="dh-feature-copy reveal">
+    <section class="shell dh-divider dh-maturity">
+      <div class="dh-maturity-heading reveal">
         <p class="label orange">Estado do produto</p>
-        <h2 class="display">Funcional o suficiente para validar. Ainda não pronto para produção real.</h2>
-        <p>A versão atual consolida o frontend e as regras de interação do produto. Rotas, papéis, fluxo de demandas, notificações e regras financeiras foram auditados e validados no código.</p>
-        <p>Como a persistência ainda é local e as credenciais são de demonstração, o produto não foi publicado para uso real. A próxima etapa é migrar autenticação, dados e arquivos para backend.</p>
+        <h2 class="display">Pronto para validar. O próximo passo é levar a estrutura para produção.</h2>
       </div>
-      <div class="dh-tech-panel reveal">
-        <div class="dh-tech-head"><span>Frontend consolidado</span><strong>VALIDADO</strong></div>
-        <div class="dh-tech-row"><span>React + TypeScript</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>TanStack Start / Router</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>Rotas internas auditadas</span><b>✓</b></div>
-        <div class="dh-tech-row"><span>TypeScript estrito</span><b>0 erros</b></div>
-        <div class="dh-tech-row"><span>ESLint</span><b>0 erros bloqueantes</b></div>
-        <div class="dh-tech-row muted-row"><span>Persistência</span><b>localStorage → backend</b></div>
+
+      <div class="dh-maturity-grid">
+        <div class="dh-maturity-copy reveal">
+          <p>A versão atual consolida a interface e as principais regras de interação do produto. Rotas, papéis, fluxo de demandas, notificações e regras financeiras já foram auditados e validados no frontend.</p>
+          <p>A infraestrutura ainda é de demonstração: persistência local e credenciais de teste. A próxima evolução é conectar autenticação, banco de dados e arquivos a um backend preparado para uso real.</p>
+
+          <div class="dh-maturity-status" aria-label="Estado atual do Design HUB">
+            <span class="dh-maturity-dot" aria-hidden="true"></span>
+            <div>
+              <small>ESTADO ATUAL</small>
+              <strong>Frontend funcional e auditado</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="dh-tech-panel reveal">
+          <div class="dh-tech-head"><span>Frontend consolidado</span><strong>VALIDADO</strong></div>
+          <div class="dh-tech-row"><span>React + TypeScript</span><b>✓</b></div>
+          <div class="dh-tech-row"><span>TanStack Start / Router</span><b>✓</b></div>
+          <div class="dh-tech-row"><span>Rotas internas auditadas</span><b>✓</b></div>
+          <div class="dh-tech-row"><span>TypeScript estrito</span><b>0 erros</b></div>
+          <div class="dh-tech-row"><span>ESLint</span><b>0 erros bloqueantes</b></div>
+          <div class="dh-tech-row muted-row"><span>Próxima etapa</span><b>backend + autenticação</b></div>
+        </div>
       </div>
     </section>
 
@@ -357,26 +371,43 @@
       </div>
     </section>
 
-    <section id="contato" class="final-cta">
-      <div class="shell final-cta-inner">
-        <h2 class="display cta-title">Tem um desafio<br>que precisa<br>de design?</h2>
-        <div class="cta-bottom">
-          <p class="cta-text">Estou aberto a novas oportunidades, projetos e boas conversas.</p>
-          <div class="cta-links">
-            <div class="cta-links-row"><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a><a data-link="email">E-mail ↗</a></div>
-            <a class="cta-email" data-link="email"><span data-site-email></span></a>
-          </div>
+    <section id="contato" class="contact-section">
+      <div class="shell contact-shell">
+        <div class="contact-intro reveal">
+          <p class="label orange">Contato</p>
+          <h2 class="display contact-title">Vamos conversar sobre o que você está construindo.</h2>
+          <p class="contact-copy">Projeto, oportunidade profissional ou uma boa troca sobre design — escolha o canal que fizer mais sentido.</p>
+        </div>
+
+        <div class="contact-channels reveal" aria-label="Canais de contato">
+          <a class="contact-channel" data-link="linkedin" target="_blank" rel="noopener">
+            <span class="contact-channel-type">LinkedIn</span>
+            <strong>Conectar profissionalmente</strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
+
+          <a class="contact-channel" data-link="email">
+            <span class="contact-channel-type">E-mail</span>
+            <strong data-site-email></strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
+
+          <a class="contact-channel" data-link="whatsapp" target="_blank" rel="noopener">
+            <span class="contact-channel-type">WhatsApp</span>
+            <strong>Conversar agora</strong>
+            <span class="contact-channel-arrow" aria-hidden="true">↗︎</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-grid">
-      <div><div class="footer-name"><span data-site-name></span><span class="orange">™</span></div><p class="footer-text"><span data-site-person></span><br><span data-site-role></span></p></div>
-      <div><p class="label">Onde</p><p class="footer-text" data-site-location></p></div>
-      <div><p class="label">Social</p><ul class="footer-links"><li><a data-link="linkedin" target="_blank" rel="noopener">LinkedIn ↗</a></li><li><a data-link="behance" target="_blank" rel="noopener">Behance ↗</a></li><li><a data-link="instagram" target="_blank" rel="noopener">Instagram ↗</a></li></ul></div>
-      <div><p class="footer-text" data-site-tagline></p><p class="label" style="margin-top:28px">© 2026</p></div>
+    <div class="shell footer-closing">
+      <p class="footer-closing-message">
+        Se algum desses projetos fez você imaginar o que podemos construir juntos, acho que já temos um bom motivo para conversar.
+      </p>
+      <p class="footer-copyright">© 2026 · Bernardo Ramalho</p>
     </div>
   </footer>
 
