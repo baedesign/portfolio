@@ -781,10 +781,31 @@ button { font: inherit; }
   .hero-topline { margin-bottom:24px; }
 
   .desktop-nav { display:none; }
-  .mobile-toggle { display:block; }
-  .mobile-nav.open { display:flex; flex-direction:column; gap:16px; padding-top:22px; padding-bottom:24px; }
+  .mobile-toggle { display:block; position:relative; z-index:2; }
+
+  /* Quando o menu mobile abre, o header ganha um fundo sólido.
+     Assim os links não ficam visualmente sobrepostos ao conteúdo do hero. */
+  .site-header.menu-open {
+    background:var(--bg);
+    border-color:var(--line);
+  }
+  .site-header.menu-open.scrolled {
+    background:var(--bg);
+    backdrop-filter:none;
+  }
+  .mobile-nav.open {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    min-height:calc(100dvh - 72px);
+    padding-top:clamp(42px, 8vh, 78px);
+    padding-bottom:32px;
+    background:var(--bg);
+    overflow-y:auto;
+  }
   .mobile-nav a { font-family:var(--font-display); font-size:30px; font-weight:800; text-transform:uppercase; letter-spacing:-.03em; }
   .mobile-nav .nav-cta { font-family:var(--font-body); font-size:12px; margin-top:8px; width:max-content; }
+  body.mobile-menu-open { overflow:hidden; }
   .hero { padding-top:130px; }
   .hero-bottom { display:block; }
   .hero-copy { max-width:570px; }

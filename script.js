@@ -45,15 +45,38 @@
   setScrolled();
   window.addEventListener("scroll", setScrolled, { passive:true });
 
+  const setMobileMenu = (open) => {
+    mobileNav?.classList.toggle("open", open);
+    header?.classList.toggle("menu-open", open);
+    document.body.classList.toggle("mobile-menu-open", open);
+
+    if (toggle) {
+      toggle.textContent = open ? "Fechar" : "Menu";
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    }
+  };
+
   toggle?.addEventListener("click", () => {
-    const open = mobileNav?.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(Boolean(open)));
-    toggle.textContent = open ? "Fechar" : "Menu";
+    setMobileMenu(!mobileNav?.classList.contains("open"));
   });
+
   mobileNav?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-    mobileNav.classList.remove("open");
-    if (toggle) { toggle.textContent = "Menu"; toggle.setAttribute("aria-expanded", "false"); }
+    setMobileMenu(false);
   }));
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && mobileNav?.classList.contains("open")) {
+      setMobileMenu(false);
+      toggle?.focus();
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900 && mobileNav?.classList.contains("open")) {
+      setMobileMenu(false);
+    }
+  });
 
   // ---------- Home: projetos ----------
   const projectList = document.querySelector("#project-list");
