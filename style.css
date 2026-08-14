@@ -781,31 +781,89 @@ button { font: inherit; }
   .hero-topline { margin-bottom:24px; }
 
   .desktop-nav { display:none; }
-  .mobile-toggle { display:block; position:relative; z-index:2; }
 
-  /* Quando o menu mobile abre, o header ganha um fundo sólido.
-     Assim os links não ficam visualmente sobrepostos ao conteúdo do hero. */
-  .site-header.menu-open {
-    background:var(--bg);
-    border-color:var(--line);
+  /* O topo fica sempre acima do painel do menu. */
+  .nav-inner {
+    position:relative;
+    z-index:2;
   }
-  .site-header.menu-open.scrolled {
-    background:var(--bg);
-    backdrop-filter:none;
+
+  .mobile-toggle {
+    display:block;
+    position:relative;
+    z-index:3;
+    cursor:pointer;
   }
-  .mobile-nav.open {
+
+  /*
+     MENU MOBILE
+     O menu agora é um painel de tela inteira. Antes ele apenas aumentava a
+     altura do header fixo e, por isso, os links eram desenhados por cima do
+     hero. O fundo opaco abaixo impede qualquer texto da página de aparecer
+     atrás da navegação.
+  */
+  .mobile-nav {
     display:flex;
     flex-direction:column;
+    justify-content:flex-start;
     gap:16px;
-    min-height:calc(100dvh - 72px);
-    padding-top:clamp(42px, 8vh, 78px);
-    padding-bottom:32px;
+    position:fixed;
+    inset:0;
+    z-index:1;
+    width:100%;
+    max-width:none;
+    height:100dvh;
+    margin:0;
+    padding:clamp(112px, 17vh, 150px) var(--pad) 36px;
     background:var(--bg);
     overflow-y:auto;
+    overscroll-behavior:contain;
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+    transform:translateY(-10px);
+    transition:opacity .25s ease, transform .35s var(--ease), visibility 0s linear .35s;
   }
-  .mobile-nav a { font-family:var(--font-display); font-size:30px; font-weight:800; text-transform:uppercase; letter-spacing:-.03em; }
-  .mobile-nav .nav-cta { font-family:var(--font-body); font-size:12px; margin-top:8px; width:max-content; }
-  body.mobile-menu-open { overflow:hidden; }
+
+  .mobile-nav.open {
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+    transform:translateY(0);
+    transition:opacity .25s ease, transform .35s var(--ease), visibility 0s;
+  }
+
+  .site-header.menu-open {
+    background:var(--bg);
+    border-color:transparent;
+  }
+
+  .site-header.menu-open.scrolled {
+    background:var(--bg);
+    border-color:transparent;
+    backdrop-filter:none;
+  }
+
+  .mobile-nav a {
+    font-family:var(--font-display);
+    font-size:30px;
+    font-weight:800;
+    text-transform:uppercase;
+    letter-spacing:-.03em;
+  }
+
+  .mobile-nav .nav-cta {
+    font-family:var(--font-body);
+    font-size:12px;
+    margin-top:8px;
+    width:max-content;
+  }
+
+  body.mobile-menu-open {
+    overflow:hidden;
+    touch-action:none;
+  }
+
   .hero { padding-top:130px; }
   .hero-bottom { display:block; }
   .hero-copy { max-width:570px; }
@@ -827,6 +885,23 @@ button { font: inherit; }
   .cta-links-row { justify-content:flex-start; }
   .case-meta { grid-template-columns:1fr 1fr; }
   .case-section, .case-results { grid-template-columns:1fr; }
+}
+
+@media (max-width: 900px) and (max-height: 500px) {
+  .mobile-nav {
+    gap:9px;
+    padding-top:82px;
+    padding-bottom:22px;
+  }
+
+  .mobile-nav a {
+    font-size:24px;
+    line-height:1.05;
+  }
+
+  .mobile-nav .nav-cta {
+    margin-top:4px;
+  }
 }
 
 @media (max-width: 560px) {

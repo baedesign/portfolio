@@ -46,15 +46,13 @@
   window.addEventListener("scroll", setScrolled, { passive:true });
 
   const setMobileMenu = (open) => {
-    mobileNav?.classList.toggle("open", open);
+    if (!mobileNav || !toggle) return;
+    mobileNav.classList.toggle("open", open);
     header?.classList.toggle("menu-open", open);
     document.body.classList.toggle("mobile-menu-open", open);
-
-    if (toggle) {
-      toggle.textContent = open ? "Fechar" : "Menu";
-      toggle.setAttribute("aria-expanded", String(open));
-      toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
-    }
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    toggle.textContent = open ? "Fechar" : "Menu";
   };
 
   toggle?.addEventListener("click", () => {
@@ -72,11 +70,11 @@
     }
   });
 
-  window.addEventListener("resize", () => {
-    if (window.innerWidth > 900 && mobileNav?.classList.contains("open")) {
-      setMobileMenu(false);
-    }
-  });
+  const mobileBreakpoint = window.matchMedia("(max-width: 900px)");
+  const closeMenuOutsideMobile = (event) => {
+    if (!event.matches) setMobileMenu(false);
+  };
+  mobileBreakpoint.addEventListener?.("change", closeMenuOutsideMobile);
 
   // ---------- Home: projetos ----------
   const projectList = document.querySelector("#project-list");
